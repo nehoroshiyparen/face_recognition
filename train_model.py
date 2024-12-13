@@ -26,7 +26,7 @@ def train_model_with_dataset():
                 all_encodings['encodings'].append(face_enc)
                 print(f"Лицо добавлено для {person_name} из файла: {image}")
     
-    with open('all_encodings.pickle', 'wb') as file:
+    with open('models/all_encodings.pickle', 'wb') as file:
         file.write(pickle.dumps(all_encodings))
     
     print('[INFO] Файл all_encodings.pickle успешно создан')
